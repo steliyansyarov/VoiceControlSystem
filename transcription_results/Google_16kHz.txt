@@ -1,0 +1,59 @@
+p1_1.wav: go to the kitchen
+p1_2.wav: Sasha go to the kitchen
+p1_3.wav: move to the kitchen
+p1_4.wav: sexy banana
+p1_5.wav: take the banana from the table
+p1_6.wav: Hookstown the crickets
+p1_7.wav: close the door
+p1_8.wav: close the apples from the kitchen
+p1_9.wav: Saints record from the table
+
+p2_1.wav: go to the kitchen
+p2_2.wav: Sasha go to the kitchen
+p2_3.wav: husavik insurance
+p2_4.wav: tasty banana
+p2_5.wav: Taste of banana from the tables
+p2_6.wav: Kutztown the crackers
+p2_7.wav: close the door
+p2_8.wav: close the Apple from the kitchen
+p2_9.wav: seek records from the table
+
+p3_1.wav: go to the kitchen
+p3_2.wav: sussexes to the kitchen
+p3_3.wav: move to the kitchen
+p3_4.wav: sexist Alanis
+p3_5.wav: six is Atlanta from the table
+p3_6.wav: Stone crackers
+p3_7.wav: close the door
+p3_8.wav: close the Apple from the kitchen
+p3_9.wav: SEC records from the table
+
+p4_1.wav: go to the kitchen
+p4_2.wav: Sasha go to the kitchen
+p4_3.wav: move to the kitchen
+p4_4.wav: takes two banana
+p4_5.wav: 60 banana from the table
+p4_6.wav: put down the crack house
+p4_7.wav: close the door
+p4_8.wav: close the episode of the kitchen
+p4_9.wav: sick record from the table
+
+p5_1.wav: go to the kitchen
+p5_2.wav: so I should go to the kitchen
+p5_3.wav: move to the kitchen
+p5_4.wav: sexy banana
+p5_5.wav: send a banana from the table
+p5_6.wav: futon the crackers
+p5_7.wav: close the door
+p5_8.wav: close the apples from the kitchen
+p5_9.wav: say crackers from the table
+
+p6_1.wav: go to the kitchen
+p6_2.wav: Sasha go to the kitchen
+p6_3.wav: most of the kitchen
+p6_4.wav: save the banana
+p6_5.wav: take the banana from the table
+p6_6.wav: put down the crackers
+p6_7.wav: close the door
+p6_8.wav: close the Apple from the kitchen
+p6_9.wav: safecrackers from the Fables

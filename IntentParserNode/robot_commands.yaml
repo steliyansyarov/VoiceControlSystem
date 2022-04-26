@@ -1,0 +1,87 @@
+# Move action
+---
+type: intent
+name: moveAction
+slots:
+  - name: destination
+    entity: room
+  - name: object
+    entity: object
+utterances:
+  - move to the [destination]
+  - go to the [destination]
+  - get close to the [object]
+  - move close to the [object]
+  - go next to the [object]
+
+# Pick-up action
+---
+type: intent
+name: pickUpAction
+slots:
+  - name: object
+    entity: object
+  - name: room
+    entity: room
+utterances:
+  - pick up the [object]
+  - pick up the [object] from [room]
+  - pick up the [object] from [object]
+  - take the [object]
+  - take the [object] from [room]
+  - take the [object] from [object]
+
+# Put-down action
+---
+type: intent
+name: putDownAction
+slots:
+  - name: object
+    entity: object
+utterances:
+  - drop down the [object]
+  - drop the [object]
+  - put down the [object]
+
+# Bring action
+---
+type: intent
+name: bringAction
+slots:
+  - name: object
+    entity: object
+  - name: origin
+    entity: room
+  - name: destination
+    entity: room
+utterances:
+  - bring the [object] from [origin]
+  - bring the [object] to [destination]
+  - bring the [object] from [object]
+  - bring the [object] from [origin] to [destination]
+  - take the [object] to [destination]
+  - take the [object] from [origin] to [destination]
+
+# Room Entity
+---
+type: entity
+name: room
+values:
+  - bathroom
+  - bedroom
+  - dining room
+  - hallway
+  - kitchen
+  - living room
+
+# Object Entity
+---
+type: entity
+name: object
+values:
+  - banana
+  - crackers
+  - toy
+  - bottle
+  - apple
+  - table

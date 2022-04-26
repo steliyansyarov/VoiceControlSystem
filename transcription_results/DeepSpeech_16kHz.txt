@@ -1,0 +1,59 @@
+p1_1.wav: go like
+p1_2.wav: but go to the kitchen
+p1_3.wav: moved to the kitchen
+p1_4.wav: they do the now
+p1_5.wav: he ideational
+p1_6.wav: but now the rector
+p1_7.wav: you adore
+p1_8.wav: now the apple complication
+p1_9.wav: the correct from the table
+
+p2_1.wav: go to the kitchen
+p2_2.wav: stuart
+p2_3.wav: as to the ten
+p2_4.wav: pachmann
+p2_5.wav: as to the man or from the table
+p2_6.wav: we stoneacres
+p2_7.wav: the door
+p2_8.wav: to the apple from the kitchen
+p2_9.wav: a correctness from the table
+
+p3_1.wav: go to the kids
+p3_2.wav: thus it tobacco
+p3_3.wav: after the case
+p3_4.wav: then the balance
+p3_5.wav: the attainable
+p3_6.wav: i once
+p3_7.wav: this is our
+p3_8.wav: the region
+p3_9.wav: the crackers from the table
+
+p4_1.wav: go to the kitchen
+p4_2.wav: aagot the kitten
+p4_3.wav: moved to the case
+p4_4.wav: the banana
+p4_5.wav: the inadaptable
+p4_6.wav: the connection
+p4_7.wav: so the dog
+p4_8.wav: cloth the affront kitchen
+p4_9.wav: satanta
+
+p5_1.wav: go to the kitchen
+p5_2.wav: so i go to the kitchen
+p5_3.wav: moved to the inn
+p5_4.wav: tatiana
+p5_5.wav: tiennette
+p5_6.wav: the cracker
+p5_7.wav: before
+p5_8.wav: cooeperation
+p5_9.wav: the crackers from the time
+
+p6_1.wav: go to the hudson
+p6_2.wav: father goulden the title
+p6_3.wav: the kid
+p6_4.wav: the man
+p6_5.wav: the 
+p6_6.wav: down the track were
+p6_7.wav: well the door
+p6_8.wav: now the apple from the fiction
+p6_9.wav: i propose from the table

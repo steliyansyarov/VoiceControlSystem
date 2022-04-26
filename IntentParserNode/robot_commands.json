@@ -1,0 +1,417 @@
+{
+  "entities": {
+    "object": {
+      "automatically_extensible": true,
+      "data": [
+        {
+          "synonyms": [],
+          "value": "banana"
+        },
+        {
+          "synonyms": [],
+          "value": "crackers"
+        },
+        {
+          "synonyms": [],
+          "value": "toy"
+        },
+        {
+          "synonyms": [],
+          "value": "bottle"
+        },
+        {
+          "synonyms": [],
+          "value": "apple"
+        }
+      ],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    },
+    "room": {
+      "automatically_extensible": true,
+      "data": [
+        {
+          "synonyms": [],
+          "value": "bathroom"
+        },
+        {
+          "synonyms": [],
+          "value": "bedroom"
+        },
+        {
+          "synonyms": [],
+          "value": "dining room"
+        },
+        {
+          "synonyms": [],
+          "value": "hallway"
+        },
+        {
+          "synonyms": [],
+          "value": "kitchen"
+        },
+        {
+          "synonyms": [],
+          "value": "living room"
+        }
+      ],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    }
+  },
+  "intents": {
+    "bringAction": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "bring the "
+            },
+            {
+              "entity": "object",
+              "slot_name": "object",
+              "text": "apple"
+            },
+            {
+              "text": " from "
+            },
+            {
+              "entity": "room",
+              "slot_name": "origin",
+              "text": "kitchen"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "bring the "
+            },
+            {
+              "entity": "object",
+              "slot_name": "object",
+              "text": "banana"
+            },
+            {
+              "text": " to "
+            },
+            {
+              "entity": "room",
+              "slot_name": "destination",
+              "text": "living room"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "bring the "
+            },
+            {
+              "entity": "object",
+              "slot_name": "object",
+              "text": "crackers"
+            },
+            {
+              "text": " from "
+            },
+            {
+              "entity": "object",
+              "slot_name": "object",
+              "text": "toy"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "bring the "
+            },
+            {
+              "entity": "object",
+              "slot_name": "object",
+              "text": "bottle"
+            },
+            {
+              "text": " from "
+            },
+            {
+              "entity": "room",
+              "slot_name": "origin",
+              "text": "bathroom"
+            },
+            {
+              "text": " to "
+            },
+            {
+              "entity": "room",
+              "slot_name": "destination",
+              "text": "bedroom"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "take the "
+            },
+            {
+              "entity": "object",
+              "slot_name": "object",
+              "text": "apple"
+            },
+            {
+              "text": " to "
+            },
+            {
+              "entity": "room",
+              "slot_name": "destination",
+              "text": "dining room"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "take the "
+            },
+            {
+              "entity": "object",
+              "slot_name": "object",
+              "text": "banana"
+            },
+            {
+              "text": " from "
+            },
+            {
+              "entity": "room",
+              "slot_name": "origin",
+              "text": "hallway"
+            },
+            {
+              "text": " to "
+            },
+            {
+              "entity": "room",
+              "slot_name": "destination",
+              "text": "kitchen"
+            }
+          ]
+        }
+      ]
+    },
+    "moveAction": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "move to the "
+            },
+            {
+              "entity": "room",
+              "slot_name": "destination",
+              "text": "bathroom"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "go to the "
+            },
+            {
+              "entity": "room",
+              "slot_name": "destination",
+              "text": "bedroom"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "get close to the "
+            },
+            {
+              "entity": "object",
+              "slot_name": "object",
+              "text": "banana"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "move close to the "
+            },
+            {
+              "entity": "object",
+              "slot_name": "object",
+              "text": "crackers"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "go next to the "
+            },
+            {
+              "entity": "object",
+              "slot_name": "object",
+              "text": "toy"
+            }
+          ]
+        }
+      ]
+    },
+    "pickUpAction": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "pick up the "
+            },
+            {
+              "entity": "object",
+              "slot_name": "object",
+              "text": "bottle"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "pick up the "
+            },
+            {
+              "entity": "object",
+              "slot_name": "object",
+              "text": "apple"
+            },
+            {
+              "text": " from "
+            },
+            {
+              "entity": "room",
+              "slot_name": "room",
+              "text": "dining room"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "pick up the "
+            },
+            {
+              "entity": "object",
+              "slot_name": "object",
+              "text": "banana"
+            },
+            {
+              "text": " from "
+            },
+            {
+              "entity": "object",
+              "slot_name": "object",
+              "text": "crackers"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "take the "
+            },
+            {
+              "entity": "object",
+              "slot_name": "object",
+              "text": "toy"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "take the "
+            },
+            {
+              "entity": "object",
+              "slot_name": "object",
+              "text": "bottle"
+            },
+            {
+              "text": " from "
+            },
+            {
+              "entity": "room",
+              "slot_name": "room",
+              "text": "hallway"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "take the "
+            },
+            {
+              "entity": "object",
+              "slot_name": "object",
+              "text": "apple"
+            },
+            {
+              "text": " from "
+            },
+            {
+              "entity": "object",
+              "slot_name": "object",
+              "text": "banana"
+            }
+          ]
+        }
+      ]
+    },
+    "putDownAction": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "drop down the "
+            },
+            {
+              "entity": "object",
+              "slot_name": "object",
+              "text": "crackers"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "drop the "
+            },
+            {
+              "entity": "object",
+              "slot_name": "object",
+              "text": "toy"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "put down the "
+            },
+            {
+              "entity": "object",
+              "slot_name": "object",
+              "text": "bottle"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "language": "en"
+}

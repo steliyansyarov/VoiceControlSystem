@@ -5,67 +5,105 @@ name: moveAction
 slots:
   - name: destination
     entity: room
-  - name: object
-    entity: object
+  - name: grabbable
+    entity: grabbable
+  - name: name
+    entity: robot
 utterances:
-  - move to the [destination]
+  - \'[name]\' go to the [destination]
   - go to the [destination]
-  - get close to the [object]
-  - move close to the [object]
-  - go next to the [object]
+  - go to [destination]
+  - go next to the [grabbable]
+  - \'[name]\' move to the [destination]
+  - move to the [destination]
+  - move to [destination]
+  - move close to the [grabbable]
 
 # Pick-up action
 ---
 type: intent
 name: pickUpAction
 slots:
-  - name: object
-    entity: object
-  - name: room
-    entity: room
+  - name: grabbable
+    entity: grabbable
+  - name: placement
+    entity: placement
+  - name: name
+    entity: robot
 utterances:
-  - pick up the [object]
-  - pick up the [object] from [room]
-  - pick up the [object] from [object]
-  - take the [object]
-  - take the [object] from [room]
-  - take the [object] from [object]
+  - \'[name]\' pick up the [grabbable]
+  - pick up the [grabbable]
+  - pick up the [grabbable] from the [placement]
+  - pick up the [grabbable] from [placement]
+  - \'[name]\' take the [grabbable]
+  - take the [grabbable]
+  - take the [grabbable] from the [placement]
+  - take the [grabbable] from [placement]
 
 # Put-down action
 ---
 type: intent
 name: putDownAction
 slots:
-  - name: object
-    entity: object
+  - name: grabbable
+    entity: grabbable
+  - name: placement
+    entity: placement
+  - name: name
+    entity: robot
 utterances:
-  - drop down the [object]
-  - drop the [object]
-  - put down the [object]
+  - \'[name]\' put down the [grabbable]
+  - put down the [grabbable]
+  - put down [grabbable]
+  - \'[name]\' drop down the [grabbable]
+  - drop down the [grabbable]
+  - drop down [grabbable]
+  - \'[name]\' drop the [grabbable]
+  - drop the [grabbable]
+  - drop [grabbable]
 
 # Bring action
 ---
 type: intent
 name: bringAction
 slots:
-  - name: object
-    entity: object
   - name: origin
     entity: room
   - name: destination
     entity: room
+  - name: grabbable
+    entity: grabbable
+  - name: placement
+    entity: placement
+  - name: name
+    entity: robot
 utterances:
-  - bring the [object] from [origin]
-  - bring the [object] to [destination]
-  - bring the [object] from [object]
-  - bring the [object] from [origin] to [destination]
-  - take the [object] to [destination]
-  - take the [object] from [origin] to [destination]
+  - \'[name]\' bring the [grabbable] from [origin]
+  - bring the [grabbable] from [origin]
+  - \'[name]\' bring the [grabbable] to [destination]
+  - bring the [grabbable] to [destination]
+  - \'[name]\' bring the [grabbable] from [placement]
+  - bring the [grabbable] from [placement]
+  - \'[name]\' bring the [grabbable] from [origin] to [destination]
+  - bring the [grabbable] from [origin] to [destination]
+
+# Grabbable Entity
+---
+type: entity
+name: grabbable
+automatically_extensible: no
+values:
+  - banana
+  - crackers
+  - toy
+  - bottle
+  - apple
 
 # Room Entity
 ---
 type: entity
 name: room
+automatically_extensible: no
 values:
   - bathroom
   - bedroom
@@ -74,14 +112,19 @@ values:
   - kitchen
   - living room
 
-# Object Entity
+# Placement Entity
 ---
 type: entity
-name: object
+name: placement
+automatically_extensible: no
 values:
-  - banana
-  - crackers
-  - toy
-  - bottle
-  - apple
   - table
+  - floor
+
+# Robot Name Entity
+---
+type: entity
+name: robot
+automatically_extensible: no
+values:
+  - Sasha

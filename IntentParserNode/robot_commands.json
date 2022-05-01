@@ -1,7 +1,7 @@
 {
   "entities": {
-    "object": {
-      "automatically_extensible": true,
+    "grabbable": {
+      "automatically_extensible": false,
       "data": [
         {
           "synonyms": [],
@@ -27,8 +27,34 @@
       "matching_strictness": 1.0,
       "use_synonyms": true
     },
+    "placement": {
+      "automatically_extensible": false,
+      "data": [
+        {
+          "synonyms": [],
+          "value": "table"
+        },
+        {
+          "synonyms": [],
+          "value": "floor"
+        }
+      ],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    },
+    "robot": {
+      "automatically_extensible": false,
+      "data": [
+        {
+          "synonyms": [],
+          "value": "Sasha"
+        }
+      ],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    },
     "room": {
-      "automatically_extensible": true,
+      "automatically_extensible": false,
       "data": [
         {
           "synonyms": [],
@@ -65,11 +91,19 @@
         {
           "data": [
             {
-              "text": "bring the "
+              "text": "\\'"
             },
             {
-              "entity": "object",
-              "slot_name": "object",
+              "entity": "robot",
+              "slot_name": "name",
+              "text": "Sasha"
+            },
+            {
+              "text": "\\' bring the "
+            },
+            {
+              "entity": "grabbable",
+              "slot_name": "grabbable",
               "text": "apple"
             },
             {
@@ -78,7 +112,7 @@
             {
               "entity": "room",
               "slot_name": "origin",
-              "text": "kitchen"
+              "text": "bathroom"
             }
           ]
         },
@@ -88,9 +122,141 @@
               "text": "bring the "
             },
             {
-              "entity": "object",
-              "slot_name": "object",
+              "entity": "grabbable",
+              "slot_name": "grabbable",
               "text": "banana"
+            },
+            {
+              "text": " from "
+            },
+            {
+              "entity": "room",
+              "slot_name": "origin",
+              "text": "bedroom"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "\\'"
+            },
+            {
+              "entity": "robot",
+              "slot_name": "name",
+              "text": "Sasha"
+            },
+            {
+              "text": "\\' bring the "
+            },
+            {
+              "entity": "grabbable",
+              "slot_name": "grabbable",
+              "text": "crackers"
+            },
+            {
+              "text": " to "
+            },
+            {
+              "entity": "room",
+              "slot_name": "destination",
+              "text": "dining room"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "bring the "
+            },
+            {
+              "entity": "grabbable",
+              "slot_name": "grabbable",
+              "text": "toy"
+            },
+            {
+              "text": " to "
+            },
+            {
+              "entity": "room",
+              "slot_name": "destination",
+              "text": "hallway"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "\\'"
+            },
+            {
+              "entity": "robot",
+              "slot_name": "name",
+              "text": "Sasha"
+            },
+            {
+              "text": "\\' bring the "
+            },
+            {
+              "entity": "grabbable",
+              "slot_name": "grabbable",
+              "text": "bottle"
+            },
+            {
+              "text": " from "
+            },
+            {
+              "entity": "placement",
+              "slot_name": "placement",
+              "text": "table"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "bring the "
+            },
+            {
+              "entity": "grabbable",
+              "slot_name": "grabbable",
+              "text": "apple"
+            },
+            {
+              "text": " from "
+            },
+            {
+              "entity": "placement",
+              "slot_name": "placement",
+              "text": "floor"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "\\'"
+            },
+            {
+              "entity": "robot",
+              "slot_name": "name",
+              "text": "Sasha"
+            },
+            {
+              "text": "\\' bring the "
+            },
+            {
+              "entity": "grabbable",
+              "slot_name": "grabbable",
+              "text": "banana"
+            },
+            {
+              "text": " from "
+            },
+            {
+              "entity": "room",
+              "slot_name": "origin",
+              "text": "kitchen"
             },
             {
               "text": " to "
@@ -108,29 +274,9 @@
               "text": "bring the "
             },
             {
-              "entity": "object",
-              "slot_name": "object",
+              "entity": "grabbable",
+              "slot_name": "grabbable",
               "text": "crackers"
-            },
-            {
-              "text": " from "
-            },
-            {
-              "entity": "object",
-              "slot_name": "object",
-              "text": "toy"
-            }
-          ]
-        },
-        {
-          "data": [
-            {
-              "text": "bring the "
-            },
-            {
-              "entity": "object",
-              "slot_name": "object",
-              "text": "bottle"
             },
             {
               "text": " from "
@@ -149,54 +295,6 @@
               "text": "bedroom"
             }
           ]
-        },
-        {
-          "data": [
-            {
-              "text": "take the "
-            },
-            {
-              "entity": "object",
-              "slot_name": "object",
-              "text": "apple"
-            },
-            {
-              "text": " to "
-            },
-            {
-              "entity": "room",
-              "slot_name": "destination",
-              "text": "dining room"
-            }
-          ]
-        },
-        {
-          "data": [
-            {
-              "text": "take the "
-            },
-            {
-              "entity": "object",
-              "slot_name": "object",
-              "text": "banana"
-            },
-            {
-              "text": " from "
-            },
-            {
-              "entity": "room",
-              "slot_name": "origin",
-              "text": "hallway"
-            },
-            {
-              "text": " to "
-            },
-            {
-              "entity": "room",
-              "slot_name": "destination",
-              "text": "kitchen"
-            }
-          ]
         }
       ]
     },
@@ -205,7 +303,15 @@
         {
           "data": [
             {
-              "text": "move to the "
+              "text": "\\'"
+            },
+            {
+              "entity": "robot",
+              "slot_name": "name",
+              "text": "Sasha"
+            },
+            {
+              "text": "\\' go to the "
             },
             {
               "entity": "room",
@@ -229,24 +335,12 @@
         {
           "data": [
             {
-              "text": "get close to the "
+              "text": "go to "
             },
             {
-              "entity": "object",
-              "slot_name": "object",
-              "text": "banana"
-            }
-          ]
-        },
-        {
-          "data": [
-            {
-              "text": "move close to the "
-            },
-            {
-              "entity": "object",
-              "slot_name": "object",
-              "text": "crackers"
+              "entity": "room",
+              "slot_name": "destination",
+              "text": "dining room"
             }
           ]
         },
@@ -256,9 +350,65 @@
               "text": "go next to the "
             },
             {
-              "entity": "object",
-              "slot_name": "object",
-              "text": "toy"
+              "entity": "grabbable",
+              "slot_name": "grabbable",
+              "text": "banana"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "\\'"
+            },
+            {
+              "entity": "robot",
+              "slot_name": "name",
+              "text": "Sasha"
+            },
+            {
+              "text": "\\' move to the "
+            },
+            {
+              "entity": "room",
+              "slot_name": "destination",
+              "text": "hallway"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "move to the "
+            },
+            {
+              "entity": "room",
+              "slot_name": "destination",
+              "text": "kitchen"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "move to "
+            },
+            {
+              "entity": "room",
+              "slot_name": "destination",
+              "text": "living room"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "move close to the "
+            },
+            {
+              "entity": "grabbable",
+              "slot_name": "grabbable",
+              "text": "crackers"
             }
           ]
         }
@@ -269,11 +419,31 @@
         {
           "data": [
             {
+              "text": "\\'"
+            },
+            {
+              "entity": "robot",
+              "slot_name": "name",
+              "text": "Sasha"
+            },
+            {
+              "text": "\\' pick up the "
+            },
+            {
+              "entity": "grabbable",
+              "slot_name": "grabbable",
+              "text": "toy"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
               "text": "pick up the "
             },
             {
-              "entity": "object",
-              "slot_name": "object",
+              "entity": "grabbable",
+              "slot_name": "grabbable",
               "text": "bottle"
             }
           ]
@@ -284,17 +454,17 @@
               "text": "pick up the "
             },
             {
-              "entity": "object",
-              "slot_name": "object",
+              "entity": "grabbable",
+              "slot_name": "grabbable",
               "text": "apple"
             },
             {
-              "text": " from "
+              "text": " from the "
             },
             {
-              "entity": "room",
-              "slot_name": "room",
-              "text": "dining room"
+              "entity": "placement",
+              "slot_name": "placement",
+              "text": "table"
             }
           ]
         },
@@ -304,16 +474,36 @@
               "text": "pick up the "
             },
             {
-              "entity": "object",
-              "slot_name": "object",
+              "entity": "grabbable",
+              "slot_name": "grabbable",
               "text": "banana"
             },
             {
               "text": " from "
             },
             {
-              "entity": "object",
-              "slot_name": "object",
+              "entity": "placement",
+              "slot_name": "placement",
+              "text": "floor"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "\\'"
+            },
+            {
+              "entity": "robot",
+              "slot_name": "name",
+              "text": "Sasha"
+            },
+            {
+              "text": "\\' take the "
+            },
+            {
+              "entity": "grabbable",
+              "slot_name": "grabbable",
               "text": "crackers"
             }
           ]
@@ -324,8 +514,8 @@
               "text": "take the "
             },
             {
-              "entity": "object",
-              "slot_name": "object",
+              "entity": "grabbable",
+              "slot_name": "grabbable",
               "text": "toy"
             }
           ]
@@ -336,17 +526,17 @@
               "text": "take the "
             },
             {
-              "entity": "object",
-              "slot_name": "object",
+              "entity": "grabbable",
+              "slot_name": "grabbable",
               "text": "bottle"
             },
             {
-              "text": " from "
+              "text": " from the "
             },
             {
-              "entity": "room",
-              "slot_name": "room",
-              "text": "hallway"
+              "entity": "placement",
+              "slot_name": "placement",
+              "text": "table"
             }
           ]
         },
@@ -356,17 +546,17 @@
               "text": "take the "
             },
             {
-              "entity": "object",
-              "slot_name": "object",
+              "entity": "grabbable",
+              "slot_name": "grabbable",
               "text": "apple"
             },
             {
               "text": " from "
             },
             {
-              "entity": "object",
-              "slot_name": "object",
-              "text": "banana"
+              "entity": "placement",
+              "slot_name": "placement",
+              "text": "floor"
             }
           ]
         }
@@ -377,11 +567,107 @@
         {
           "data": [
             {
+              "text": "\\'"
+            },
+            {
+              "entity": "robot",
+              "slot_name": "name",
+              "text": "Sasha"
+            },
+            {
+              "text": "\\' put down the "
+            },
+            {
+              "entity": "grabbable",
+              "slot_name": "grabbable",
+              "text": "banana"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "put down the "
+            },
+            {
+              "entity": "grabbable",
+              "slot_name": "grabbable",
+              "text": "crackers"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "put down "
+            },
+            {
+              "entity": "grabbable",
+              "slot_name": "grabbable",
+              "text": "toy"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "\\'"
+            },
+            {
+              "entity": "robot",
+              "slot_name": "name",
+              "text": "Sasha"
+            },
+            {
+              "text": "\\' drop down the "
+            },
+            {
+              "entity": "grabbable",
+              "slot_name": "grabbable",
+              "text": "bottle"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
               "text": "drop down the "
             },
             {
-              "entity": "object",
-              "slot_name": "object",
+              "entity": "grabbable",
+              "slot_name": "grabbable",
+              "text": "apple"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "drop down "
+            },
+            {
+              "entity": "grabbable",
+              "slot_name": "grabbable",
+              "text": "banana"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "\\'"
+            },
+            {
+              "entity": "robot",
+              "slot_name": "name",
+              "text": "Sasha"
+            },
+            {
+              "text": "\\' drop the "
+            },
+            {
+              "entity": "grabbable",
+              "slot_name": "grabbable",
               "text": "crackers"
             }
           ]
@@ -392,8 +678,8 @@
               "text": "drop the "
             },
             {
-              "entity": "object",
-              "slot_name": "object",
+              "entity": "grabbable",
+              "slot_name": "grabbable",
               "text": "toy"
             }
           ]
@@ -401,11 +687,11 @@
         {
           "data": [
             {
-              "text": "put down the "
+              "text": "drop "
             },
             {
-              "entity": "object",
-              "slot_name": "object",
+              "entity": "grabbable",
+              "slot_name": "grabbable",
               "text": "bottle"
             }
           ]
